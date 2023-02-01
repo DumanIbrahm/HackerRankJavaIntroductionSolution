@@ -113,5 +113,13 @@ public class App {
             System.out.println(i+" "+sc.nextLine());
         }
     }
-
+    public static void StaticInitializerBlock(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+        int s2 = sc.nextInt();
+        if(s>0 && s2>0)
+            System.out.println(s*s2);
+        else
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+    }
 }
