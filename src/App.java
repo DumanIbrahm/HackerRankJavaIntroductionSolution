@@ -36,5 +36,27 @@ public class App {
         System.out.println("Double: " + d);
         System.out.println("Int: " + i);
     }
+    public static void outputFormatting(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("================================");
+        for(int i=0;i<3;i++){
+            String s1=sc.next();
+            int x=sc.nextInt();
+            String s = ""+x;
+            int number=0;
+            String bosluk = "";
+            for (; s.length()<3;) {
+                s=0+s;
+            }
+            number = 18 - (s1.length() + s.length());
+            for (int j = 0; j < number; j++){
+                bosluk += " ";
+            }
+            System.out.println(s1+bosluk+s);
+ 
+        }
+        System.out.println("================================");
+
+}
         
 }
