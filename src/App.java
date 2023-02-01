@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -56,7 +57,16 @@ public class App {
  
         }
         System.out.println("================================");
+    }
+    public static void Loops1(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-}
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        for (int i = 1; i < 11; i++) {
+            System.out.println(N+" x "+i+" = "+(N*i));
+        }
+        bufferedReader.close();
+    }
+
         
 }
